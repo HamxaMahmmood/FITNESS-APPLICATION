@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="login_page" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="864.0" prefWidth="1536.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitness_application.calorie_cal_controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9e9e9e" height="860.0" layoutX="-1.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="319.0" />
+      <ImageView fitHeight="115.0" fitWidth="319.0" layoutX="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@Fitzone-logo-Linje-2020-GW-1220x235-1.png" />
+         </image>
+      </ImageView>
+      <Line endX="197.0" layoutX="121.0" layoutY="4.0" startX="-122.00001525878906" strokeWidth="7.0" />
+      <Line endX="197.0" layoutX="121.0" layoutY="106.0" startX="-122.00001525878906" strokeWidth="7.0" />
+      <Button layoutX="3.0" layoutY="248.0" mnemonicParsing="false" onAction="#nutrition_button" prefHeight="86.0" prefWidth="310.0" style="-fx-background-color: black;" text="NUTRITION ANALYSIS" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Button>
+      <Button layoutX="48.0" layoutY="811.0" mnemonicParsing="false" onAction="#back_button" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: black;" text="Back" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="173.0" layoutY="811.0" mnemonicParsing="false" onAction="#logout_button" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: black;" text="Log out" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="quote_image" fitHeight="284.0" fitWidth="1221.0" layoutX="318.0" layoutY="-36.0" pickOnBounds="true" />
+      <Button layoutX="3.0" layoutY="340.0" mnemonicParsing="false" onAction="#calorie_calculator" prefHeight="86.0" prefWidth="310.0" style="-fx-background-color: black;" text="CALORIE CALCULATOR" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Line endX="1116.0" layoutX="420.0" layoutY="251.0" startX="-100.0" stroke="#9e9e9e" strokeWidth="5.0" />
+      <Line endX="-99.0" endY="598.0" layoutX="1027.0" layoutY="264.0" startX="-99.0" startY="-12.5" stroke="#9e9e9e" strokeWidth="5.0" />
+      <Line endX="511.49993896484375" layoutX="418.0" layoutY="353.0" startX="-100.0" stroke="#9e9e9e" />
+      <Line endX="511.49993896484375" layoutX="414.0" layoutY="451.0" startX="-100.0" stroke="#9e9e9e" />
+      <Line endX="511.49993896484375" layoutX="414.0" layoutY="556.0" startX="-100.0" stroke="#9e9e9e" />
+      <Label layoutX="361.0" layoutY="265.0" prefHeight="68.0" prefWidth="225.0" text="AGE :" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="360.0" layoutY="358.0" prefHeight="68.0" prefWidth="225.0" text="GENDER :" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="360.0" layoutY="467.0" prefHeight="68.0" prefWidth="225.0" text="HEIGHT     :" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="360.0" layoutY="574.0" prefHeight="68.0" prefWidth="213.0" text="WEIGHT    :" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="height_box" layoutX="624.0" layoutY="488.0" prefHeight="26.0" prefWidth="238.0" promptText="select" style="-fx-background-color: #9e9e9e;" />
+      <ComboBox fx:id="weight_box" layoutX="624.0" layoutY="595.0" prefHeight="26.0" prefWidth="238.0" promptText="select" style="-fx-background-color: #9e9e9e;" />
+      <Button layoutX="759.0" layoutY="790.0" mnemonicParsing="false" onAction="#get_calories" prefHeight="43.0" prefWidth="102.0" style="-fx-background-color: #9e9e9e;" text="GET" textFill="#0d0c0c">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Button>
+      <Line endX="511.49993896484375" layoutX="418.0" layoutY="665.0" startX="-100.0" stroke="#9e9e9e" />
+      <Label layoutX="334.0" layoutY="703.0" prefHeight="68.0" prefWidth="278.0" text="ACTIVITY LEVEL :" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="gender_box" layoutX="624.0" layoutY="383.0" prefHeight="26.0" prefWidth="238.0" promptText="select" style="-fx-background-color: #9e9e9e;" />
+      <ComboBox fx:id="age_box" layoutX="624.0" layoutY="286.0" prefHeight="26.0" prefWidth="238.0" promptText="select" style="-fx-background-color: #9e9e9e;" />
+      <ComboBox fx:id="activity_box" layoutX="624.0" layoutY="723.0" prefHeight="26.0" prefWidth="238.0" promptText="select" style="-fx-background-color: #9e9e9e;" />
+      <ImageView fx:id="loading_image" fitHeight="115.0" fitWidth="143.0" layoutX="862.0" layoutY="501.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@loading.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="477.0" layoutY="496.0" prefHeight="1.0" prefWidth="46.0" text="(cm)" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="483.0" layoutY="603.0" prefHeight="1.0" prefWidth="46.0" text="(kg)" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Line endX="511.49993896484375" layoutX="1027.0" layoutY="354.0" startX="-100.0" stroke="#9e9e9e" />
+      <Line endX="511.49993896484375" layoutX="1027.0" layoutY="409.0" startX="-100.0" stroke="#9e9e9e" />
+      <Line endX="511.49993896484375" layoutX="1026.0" layoutY="465.0" startX="-100.0" stroke="#9e9e9e" />
+      <Line endX="511.49993896484375" layoutX="1027.0" layoutY="519.0" startX="-100.0" stroke="#9e9e9e" />
+      <Line endX="511.49993896484375" layoutX="1027.0" layoutY="571.0" startX="-100.0" stroke="#9e9e9e" />
+      <Line endX="511.49993896484375" layoutX="1026.0" layoutY="623.0" startX="-100.0" stroke="#9e9e9e" />
+      <Line endX="511.49993896484375" layoutX="1027.0" layoutY="678.0" startX="-100.0" stroke="#9e9e9e" />
+      <Line endX="511.49993896484375" layoutX="1027.0" layoutY="737.0" startX="-100.0" stroke="#9e9e9e" />
+      <Line endX="39.75" endY="-55.5" layoutX="1193.0" layoutY="792.0" startX="40.4000244140625" startY="-438.20001220703125" stroke="#9e9e9e" />
+      <Label layoutX="1074.0" layoutY="272.0" prefHeight="68.0" prefWidth="319.0" text="CALORIES REQUIRED" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="939.0" layoutY="365.0" prefHeight="35.0" prefWidth="238.0" text="MAINTAIN WEIGHT" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="939.0" layoutY="417.0" prefHeight="35.0" prefWidth="285.0" text="MILD WEIGHT LOSS (0.25 kg)" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="939.0" layoutY="470.0" prefHeight="35.0" prefWidth="278.0" text="WEIGHT LOSS (0.5 kg)" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="939.0" layoutY="527.0" prefHeight="35.0" prefWidth="293.0" text="EXTREME WEIGHT LOSS (1 kg)" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="939.0" layoutY="631.0" prefHeight="35.0" prefWidth="278.0" text="WEIGHT GAIN (0.5 kg)" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="939.0" layoutY="577.0" prefHeight="35.0" prefWidth="286.0" text="MILD WEIGHT GAIN (0.25 kg)" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="938.0" layoutY="685.0" prefHeight="35.0" prefWidth="294.0" text="EXTREME WEIGHT GAIN (1 kg)" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="cal_label" layoutX="1243.0" layoutY="365.0" prefHeight="35.0" prefWidth="278.0" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="cal_label1" layoutX="1243.0" layoutY="417.0" prefHeight="35.0" prefWidth="278.0" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="cal_label11" layoutX="1243.0" layoutY="477.0" prefHeight="35.0" prefWidth="278.0" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="cal_label111" layoutX="1243.0" layoutY="527.0" prefHeight="35.0" prefWidth="278.0" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="cal_label1111" layoutX="1243.0" layoutY="577.0" prefHeight="35.0" prefWidth="278.0" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="cal_label11111" layoutX="1243.0" layoutY="631.0" prefHeight="35.0" prefWidth="278.0" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="cal_label111111" layoutX="1243.0" layoutY="685.0" prefHeight="35.0" prefWidth="278.0" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="cross_button" layoutX="1496.0" layoutY="-1.0" mnemonicParsing="false" onAction="#close_button" onMouseEntered="#cross_mouse_entered" onMouseExited="#cross_mouse_exited" prefHeight="26.0" prefWidth="40.0" style="-fx-background-color: BLACK;" text="X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="1087.0" layoutY="316.0" prefHeight="35.0" prefWidth="294.0" text="(Weight loss and gain estimation is for a week)" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+{"status_code":200,"data":
+    {"BMR":1606.25,"goals":
+        {"Extreme weight gain":
+            {
+                "calory":3489.6875,"gain weight":"1 kg"
+            }
+            ,"Extreme weight loss":
+                {
+                    "calory":1489.6875,"loss weight":"1 kg"
+                }
+                ,"maintain weight":2489.6875
+                
+                ,"Weight loss":
+                {
+                    "calory":1989.6875,"loss weight":"0.50 kg"
+                },"Mild weight gain":
+                
+                {
+                    "calory":2739.6875,"gain weight":"0.25 kg"
+                }
+                ,"Mild weight loss":
+                {
+                    "calory":2239.6875,"loss weight":"0.25 kg"
+                },"Weight gain":
+                {
+                        "calory":2989.6875,"gain weight":"0.50 kg"
+                }
+        }
+    }
+    ,"request_result":"Successful"
+}

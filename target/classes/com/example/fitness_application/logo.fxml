@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="logo_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="864.0" prefWidth="1536.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitness_application.logo_controller">
+   <children>
+      <ImageView fitHeight="475.0" fitWidth="391.0" layoutX="573.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@88535-dumbbell.gif" />
+         </image>
+      </ImageView>
+      <Button layoutX="1144.0" layoutY="735.0" mnemonicParsing="false" onAction="#buttonclick" prefHeight="128.0" prefWidth="391.0" style="-fx-background-color: WHITE;" text="PRESS SPACE TO CONTINUE &gt;&gt;">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
